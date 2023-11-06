@@ -1,11 +1,17 @@
-# add future configurations in these file
-
-#configuration for changing title
-<title>Prologue by HTML5 UP</title>
 
 
-#configuration for changing  footer title
-<ul class="copyright">
-    <li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-</ul>
+
+# -----------------------------------------------
+
+# how the content will get rendered 
+
+# Hero section --- will be in configure from config.toml
+
+# Portfolio section --- will get rendered form "content/poyect.md"
+
+# Aobut me section --- will be in configure from config.toml
+
+# Contac me Section --- will be in configure from config.toml
+
+# -----------------------------------------------
 
