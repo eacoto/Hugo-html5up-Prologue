@@ -1,48 +1,26 @@
 <!DOCTYPE HTML>
-<!--
-	Prologue by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
 	<head>
 		{{partial "head/metadata" . }}
 		{{partial "head/css" . }}
 		{{partial "head/scripts" . }}
+		{{ end }}
 	</head>
-	<body class="is-preload">
-		
+	
+	<body>		
 		<!-- Header -->
-		<div id="header">
-
-			<div class="top">
-				<!-- Logo -->
-						{{partial "header/logo" . }}
-						<!-- Nav -->
-						{{partial "header/navbar" . }}
-						
-					</div>
-					
-					<div class="bottom">						
-						<!-- Social Icons -->
-						{{partial "header/social-icons" . }}
-				</div>
-
-			</div>
-
+		{{partial "header/logo" . }}
+		{{partial "header/navbar" . }}
+		{{partial "header/social-icons" . }}
+		
 		<!-- Main -->
-			<div id="main">
-
-				
-
-				
-
-			</div>
-
+			<main>
+				{{ block "main" . }}
+				{{end}}
+			</main>	
 		<!-- Footer -->
-			<div id="footer">
-				{{partial "footer/navbar" . }}
-			</div>
-
+				{{partial "footer/copyright" . }}
+				{{partial "footer/footer" . }}
+		
 	</body>
 </html>
