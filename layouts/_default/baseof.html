@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 		{{partial "head/metadata" . }}
 		{{partial "head/css" . }}
@@ -9,18 +9,16 @@
 	
 	<body>		
 		<!-- Header -->
-		{{partial "header/logo" . }}
-		{{partial "header/navbar" . }}
-		{{partial "header/social-icons" . }}
+		{{partial "body/header" . }}
 		
 		<!-- Main -->
+		<!-- #TODO CREATE MAIN BLOCK -->
 			<main>
 				{{ block "main" . }}
 				{{end}}
 			</main>	
 		<!-- Footer -->
-				{{partial "footer/copyright" . }}
-				{{partial "footer/footer" . }}
+				{{partial "body/footer" . }}
 		
 	</body>
 </html>
