@@ -1,0 +1,27 @@
+{{define "main" }}
+
+{{ range where site.RegularPages "Type" "homepage" }}
+  {{ if (eq .Params.section_type "banner")  }}
+    {{ partial "sections/banner" . }}
+  {{ end}}
+
+
+
+
+{{ end }}
+
+
+
+<!-- Section: {{ .Params.name }} -->
+<section id="{{ .Params.name }}" aria-label="Company Name">
+    {{ partial "body/hero" . }}
+  </section>
+  
+    
+    {{ if (eq .Params.section_type "text")  }}
+      {{ partial "sections/text" . }}
+    {{ end}}
+    
+    {{ if (eq .Params.section_type "services")  }}
+      {{ partial "sections/services" . }}
+    {{ end}}
