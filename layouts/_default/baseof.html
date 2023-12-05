@@ -7,18 +7,20 @@
 		{{ end }}
 	</head>
 	
-	<body>		
+	<body>
 		<!-- Header -->
+		<header>
 		{{partial "body/header" . }}
-		
-		<!-- Main -->
+		</header>		
 		<!-- #TODO CREATE MAIN BLOCK -->
-			<main>
-				{{ block "main" . }}
-				{{end}}
-			</main>	
+		<!-- Main -->
+		<main>
+		{{ block "main" . }}{{end}}
+		</main>	
 		<!-- Footer -->
-				{{partial "body/footer" . }}
+		<footer>
+		{{partial "body/footer" . }}
+		</footer>
 		
 	</body>
 </html>
