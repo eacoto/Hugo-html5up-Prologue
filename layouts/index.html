@@ -1,27 +1,23 @@
 {{define "main" }}
 
-{{ range where site.RegularPages "Type" "homepage" }}
-  {{ if (eq .Params.section_type "banner")  }}
-    {{ partial "sections/banner" . }}
+
+{{ if (eq .Params.section_type "intro")  }}
+  {{ partial "sections/Intro" . }}
+{{ end}}
+
+{{ range where site.RegularPages "Type" "portfolio" }}
+  {{ if (eq .Params.section_type "")  }}
+    {{ partial "sections/portfolio" . }}
   {{ end}}
-
-
-
-
-{{ end }}
-
-
-
-<!-- Section: {{ .Params.name }} -->
-<section id="{{ .Params.name }}" aria-label="Company Name">
-    {{ partial "body/hero" . }}
-  </section>
-  
     
-    {{ if (eq .Params.section_type "text")  }}
-      {{ partial "sections/text" . }}
-    {{ end}}
+{{ if (eq .Params.section_type "aboutme")  }}
+{{ partial "sections/aboutme" . }}
+{{ end}}
     
-    {{ if (eq .Params.section_type "services")  }}
-      {{ partial "sections/services" . }}
-    {{ end}}
+    
+{{ if (eq .Params.section_type "contact")  }}
+  {{ partial "sections/contact" . }}
+{{ end}}
+
+{{end}}
+
