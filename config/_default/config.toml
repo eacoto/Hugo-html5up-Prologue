@@ -1,7 +1,7 @@
-baseURL: "http://localhost:1313/" # todo: change site url.
-title: Hugo-html5up-prologue
-defaultContentLanguage: "en"
-theme: Html5up-Prologue
+baseURL = 'http://localhost:1313/'
+defaultContentLanguage = "en"
+title = 'Hugo-html5up-prologue'
+
 
 # googleAnalytics: "" #TODO: set your analytics id.
 
