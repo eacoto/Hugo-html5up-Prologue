@@ -1,23 +1,7 @@
 {{define "main" }}
-
-
-{{ if (eq .Params.section_type "intro")  }}
-  {{ partial "sections/Intro" . }}
-{{ end}}
-
-{{ range where site.RegularPages "Type" "portfolio" }}
-  {{ if (eq .Params.section_type "")  }}
-    {{ partial "sections/portfolio" . }}
-  {{ end}}
-    
-{{ if (eq .Params.section_type "aboutme")  }}
-{{ partial "sections/aboutme" . }}
-{{ end}}
-    
-    
-{{ if (eq .Params.section_type "contact")  }}
-  {{ partial "sections/contact" . }}
-{{ end}}
-
+          {{ partial "sections/intro.html" . }}
+          {{ partial "sections/portfolio.html" . }}
+          {{ partial "sections/aboutme.html" . }}
+          {{ partial "sections/contac.html" . }}
 {{end}}
 
