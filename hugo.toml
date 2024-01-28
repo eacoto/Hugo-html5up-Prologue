@@ -1,0 +1,4 @@
+languageCode = 'en-us'
+
+baseURL = 'https://example.org/'
+title = 'My New Hugo Site'
