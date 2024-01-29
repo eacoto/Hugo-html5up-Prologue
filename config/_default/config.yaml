@@ -1,6 +1,6 @@
 baseURL: http://localhost:1313/ # todo: change site url.
-title: change me  # todo: change site name.
+title: Prologue  # todo: change site name.
 defaultContentLanguage: "en"
-theme: eternity
+theme: Prologue by HTML5 UP
 googleAnalytics: "" # todo: set your analytics id.
 
