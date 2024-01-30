@@ -1,9 +1,10 @@
 
 <!-- CSS -->
 
-{{  with resources.Get "css/main.css" }}
+{{  $main:= resources.Get "css/main.css" }}
+{{  $font:= resources.Get "css/fontawesome-all.min.css" }}
 
-<link rel="stylesheet" href="{{ .RelPermalink }}" />
+<link rel="stylesheet" href="{{ $main.RelPermalink }}" />
+<link rel="stylesheet" href="{{ $font.RelPermalink }}" />
 
-{{ end }}
 
