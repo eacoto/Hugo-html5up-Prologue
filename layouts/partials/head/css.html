@@ -1,4 +1,9 @@
 
 <!-- CSS -->
 
-<link rel="stylesheet" href="/css/main.css" />
+{{  with resources.Get "css/main.css" }}
+
+<link rel="stylesheet" href="{{ .RelPermalink }}" />
+
+{{ end }}
+
