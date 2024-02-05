@@ -1,0 +1,22 @@
+#menus:
+#  main:
+#  - name: Home
+#    pageRef: /
+#    weight: 10
+#  - name:  Portfolio
+#    pageRef: /portfolio
+#    weight: 20
+#  - name: About Me
+#    pageRef: /about-me
+#    weight: 30
+#  - name: Contact
+#    pageRef: /Contact
+#    weight: 30
+
+#  footer:
+#  - name: home
+#    pageRef: /legal
+#    weight: 10
+#  - name: Privacy
+#    pageRef: /privacy
+#    weight: 20
