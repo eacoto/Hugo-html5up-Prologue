@@ -1,10 +1,16 @@
-  main:
+main:
   - name: Home
     pageRef: /
     weight: 10
+  - name: Portfolio
+    pageRef: /portfolio
+    weight: 20
   - name: About Me
-    pageRef: /About-me
+    pageRef: /about-me
     weight: 30
-  #- name: Films
-  #  pageRef: /films
-  #  weight: 3
+  - name: Contact
+    pageRef: /contact
+    weight: 40
+#- name: Films
+#  pageRef: /films
+#  weight: 3\

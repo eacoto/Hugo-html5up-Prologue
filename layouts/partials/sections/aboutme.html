@@ -1,20 +1,14 @@
 
 <!-- About Me -->
-<section id="about" class="three">
+<section id="{{ .Params.title }}" class="three">
     <div class="container">
 
         <header>
-            <h2>About Me</h2>
+            <h2> {{ .Params.name }} </h2>
         </header>
-        {{ $pic8 := resources.Get "images/pic02.jpg"}}
-        <a href="#" class="image featured"><img src="{{ $pic8.RelPermalink }}" alt="" /></a>
-
-        <p>Tincidunt eu elit diam magnis pretium accumsan etiam id urna. Ridiculus
-            ultricies curae quis et rhoncus velit. Lobortis elementum aliquet nec vitae
-            laoreet eget cubilia quam non etiam odio tincidunt montes. Elementum sem
-            parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper
-            dolor. Libero rutrum ut lacinia donec curae mus vel quisque sociis nec
-            ornare iaculis.</p>
+        
+        <a href="#" class="image featured"><img src="{{ .Params.image }}" alt="" /></a>
+        
+        <p>{{ .Content }}</p>
 
     </div>
-</section>

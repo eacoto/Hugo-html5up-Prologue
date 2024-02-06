@@ -1,10 +1,13 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
+<section id="{{.Params.name}}" class="three">
+  <div class="container">
 
-  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-  {{ $dateHuman := .Date | time.Format ":date_long" }}
-  <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+      <header>
+          <h2> {{.Params.name}} </h2>
+      </header>
+      
+      <a href="#" class="image featured"><img src="{{.Params.image}}" alt="" /></a>
+      <p>{{.Content}}</p>
 
-  {{ .Content }}
-  
+  </div>
 {{ end }}
