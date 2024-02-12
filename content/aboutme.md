@@ -1,8 +1,8 @@
 ---
 title: "About Me"
 date: "2024-02-05T13:19:35-05:00"
+id: "about"
 weight: 3
-name: "soy name"
 section_type: "about-me"
 image: /images/banner.jpg
 ---

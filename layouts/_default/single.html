@@ -1,9 +1,12 @@
 {{ define "main" }}
-<section id="{{.Params.name}}" class="three">
+
+these is a single template
+
+<section id="{{.Params.id }}">
   <div class="container">
 
       <header>
-          <h2> {{.Params.name}} </h2>
+          <h2> {{ .Params.name }} </h2>
       </header>
       
       <a href="#" class="image featured"><img src="{{.Params.image}}" alt="" /></a>

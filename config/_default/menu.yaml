@@ -6,7 +6,7 @@ main:
     pageRef: /portfolio
     weight: 20
   - name: About Me
-    pageRef: /about-me
+    pageRef: /aboutme
     weight: 30
   - name: Contact
     pageRef: /contact

@@ -1,8 +1,8 @@
 ---
-title: 'Intro'
+title: "Hi! I'm <strong>Prologue</strong>"
 date: "2024-02-06T09:22:49-05:00"
 weight: 1
-name: "Intro name"
+id: "top"
 section_type: "intro"
 image: "/images/pic03.jpg"
 

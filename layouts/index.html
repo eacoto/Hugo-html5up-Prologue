@@ -1,23 +1,8 @@
 {{ define "main" }}
 
-     {{ range where site.RegularPages "Type" "intro" }}
-    {{ if (eq .Params.section_type "intro")  }}
-      {{ partial "sections/intro" . }}
-    {{ end}}
-    
-    {{ range where site.RegularPages "Type" "about-me" }}
-    {{ if (eq .Params.section_type "about-me" )  }}
-      {{ partial "sections/about-me"  . }}
-    {{ end}}
+     {{ partial "sections/intro" . }}
+     {{ partial "sections/portfolio" . }}
+     {{ partial "sections/aboutme" . }}
+     {{ partial "sections/contact" . }}
 
-
-     {{ end }}
-    {{ end }} 
-{{end}}
-
-
-    
-{{/* range where site.RegularPages "Type" "homepage" }}
-{{ if (eq .Params.section_type "banner")  }}
-  {{ partial "sections/banner" . }}
-{{ end */}} 
+{{ end }}
