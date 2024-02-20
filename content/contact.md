@@ -6,5 +6,8 @@ weight: 4
 name: ""
 section_type: "contact"
 image: ""
+class: "four"
 ---
 Elementum sem parturient nulla quam placerat viverra mauris non cum elit tempus ullamcorper dolor. Libero rutrum ut lacinia donec curae mus. Eleifend id porttitor ac ultricies lobortis sem nuncorci ridiculus faucibus a consectetur. Porttitor curae mauris urna mi dolor.
+
+{{< form >}}
