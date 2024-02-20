@@ -8,6 +8,7 @@ image: "/images/pic03.jpg"
 layout: "intro"
 class: "one dark cover"
 scr: "http://html5up.net/license"
+facon: "icon solid fa-home"
 ---
 
 im here
