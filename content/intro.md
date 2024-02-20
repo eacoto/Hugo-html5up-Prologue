@@ -3,9 +3,11 @@ title: "Hi! I'm <strong>Prologue</strong>"
 date: "2024-02-06T09:22:49-05:00"
 weight: 1
 id: "top"
-section_type: "intro"
+layout: intro
 image: "/images/pic03.jpg"
-
+layout: "intro"
+class: "one dark cover"
+scr: "http://html5up.net/license"
 ---
 
 im here
