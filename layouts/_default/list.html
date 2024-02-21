@@ -1,5 +1,4 @@
 {{ define "main" }}
-these is a list template
 <section id="{{.Params.id }}" class=" {{ .Params.class }}">
   <div class="container">
     <header>
@@ -11,7 +10,7 @@ these is a list template
 
           <div class="col-4 col-12-mobile">
               <article class="item">
-                <a href="#" class="image fit"><img src="{{ .Params.image }}" alt="" /></a>
+                <a href="{{ .Permalink }} " class="image fit"><img src="{{ .Params.image }}" alt="" /></a>
                 <header>
                   <h3> {{.Params.title }} </h3>
                 </header>
