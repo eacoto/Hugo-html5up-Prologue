@@ -1,67 +1,18 @@
 
 <!-- Portfolio -->
-<section id="portfolio" class="two">
+<section id="{{ .Params.Title }}" class="{{ .Params.class }}">
     <div class="container">
 
         <header>
-            <h2>Portfolio</h2>
+            <h2 class="alt"> {{ .Params.Title }} <a href="{{ .Params.scr }}">free</a>
+                responsive<br />
+                site template designed by <a href="{{ .Params.scr }}">HTML5 UP</a>.</h2>
+            <p> {{ .Params.subtitle }} </p>
         </header>
 
-        <p>Vitae natoque dictum etiam semper magnis enim feugiat convallis convallis
-            egestas rhoncus ridiculus in quis risus amet curabitur tempor orci penatibus.
-            Tellus erat mauris ipsum fermentum etiam vivamus eget. Nunc nibh morbi quis
-            fusce hendrerit lacus ridiculus.</p>
-
-        <div class="row">
-            <div class="col-4 col-12-mobile">
-                <article class="item">
-                    {{ $pic2 := resources.Get "images/pic02.jpg"}}
-                    <a href="#" class="image fit"><img src="{{ $pic2.RelPermalink }}" alt="" /></a>
-                    <header>
-                        <h3>Ipsum Feugiat</h3>
-                    </header>
-                </article>
-                <article class="item">
-                    {{ $pic3 := resources.Get "images/pic03.jpg"}}
-                    <a href="#" class="image fit"><img src="{{ $pic3.RelPermalink }}" alt="" /></a>
-                    <header>
-                        <h3>Rhoncus Semper</h3>
-                    </header>
-                </article>
-            </div>
-            <div class="col-4 col-12-mobile">
-                <article class="item">
-                    {{ $pic4 := resources.Get "images/pic04.jpg"}}
-                    <a href="#" class="image fit"><img src="{{ $pic4.RelPermalink }}" alt="" /></a>
-                    <header>
-                        <h3>Magna Nullam</h3>
-                    </header>
-                </article>
-                <article class="item">
-                    {{ $pic5 := resources.Get "images/pic05.jpg"}}
-                    <a href="#" class="image fit"><img src="{{ $pic5.RelPermalink }}" alt="" /></a>
-                    <header>
-                        <h3>Natoque Vitae</h3>
-                    </header>
-                </article>
-            </div>
-            <div class="col-4 col-12-mobile">
-                <article class="item">
-                    {{ $pic5 := resources.Get "images/pic05.jpg"}}
-                    <a href="#" class="image fit"><img src="{{ $pic5.RelPermalink }}" alt="" /></a>
-                    <header>
-                        <h3>Dolor Penatibus</h3>
-                    </header>
-                </article>
-                <article class="item">
-                    {{ $pic6 := resources.Get "images/pic06.jpg"}}
-                    <a href="#" class="image fit"><img src="{{ $pic6.RelPermalink }}" alt="" /></a>
-                    <header>
-                        <h3>Orci Convallis</h3>
-                    </header>
-                </article>
-            </div>
-        </div>
+        <footer>
+            <a href="#portfolio" class="button scrolly">Magna Aliquam</a>
+        </footer>
 
     </div>
 </section>
