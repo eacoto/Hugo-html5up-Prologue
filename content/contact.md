@@ -1,5 +1,5 @@
 ---
-title: "contact"
+title: "Contact"
 id: "contact"
 date: "2024-02-05T13:19:46-05:00"
 weight: 4
