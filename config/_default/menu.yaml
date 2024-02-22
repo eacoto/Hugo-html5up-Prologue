@@ -2,15 +2,27 @@ main:
   - name: Home
     pageRef: /
     weight: 10
+    params:
+      id: "top-link"
+      class: "icon solid fa-home"
   - name: Portfolio
     pageRef: /portfolio
     weight: 20
+    params:
+      id: "portfolio-link"
+      class: "icon solid fa-th"
   - name: About Me
     pageRef: /aboutme
     weight: 30
+    params:
+      id: "about-link"
+      class: "icon solid fa-user"
   - name: Contact
     pageRef: /contact
     weight: 40
+    params:
+      id: "contact-link"
+      class: "icon solid fa-envelope"
 #- name: Films
 #  pageRef: /films
 #  weight: 3\

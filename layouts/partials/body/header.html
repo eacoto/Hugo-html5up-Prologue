@@ -16,11 +16,11 @@
 
 
 		<nav id="nav">
-			{{ range .Site.Menus.main }}
+			{{- range .Site.Menus.main }}
 			<ul>
 				<li>
-				<a href="{{ .URL }}" id="top-link" title="{{ .Title }}">
-					<span class="icon solid fa-home"> {{ .Name }}</span>
+				<a href="{{ .URL }}" id="{{ with .Params.id }}{{ . }}{{ end }}" title="{{ .Title }}">
+					<span  class="{{ with .Params.class }} {{ . }} {{ end }} "> {{ .Name }}</span>
 				</a> 
 				</li>
 			</ul>
