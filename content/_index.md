@@ -7,5 +7,4 @@ id: "top"
 section_type: "home"
 class: "one dark cover"
 scr: "http://html5up.net/license"
-facon: "icon solid fa-home"
 ---
