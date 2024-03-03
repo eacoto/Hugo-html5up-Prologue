@@ -3,7 +3,7 @@ title: "About Me"
 date: "2024-02-05T13:19:35-05:00"
 id: "about"
 weight: 3
-section_type: "about-me"
+section_type: "about"
 image: /images/pic08.jpg
 class: "three"
 
