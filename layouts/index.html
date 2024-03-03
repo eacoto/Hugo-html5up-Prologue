@@ -1,20 +1,28 @@
 {{ define "main" }}
 
-<section id="{{ .Params.Title }}" class="{{ .Params.class }}">
-    <div class="container">
+      {{ range where site.RegularPages "Type" "home" }}
+     
+      {{ if (eq .Params.section_type "home")  }}
+        {{ partial "body/intro" . }}
+      {{ end}}
+     
 
-        <header>
-            <h2 class="alt"> {{ .Params.Title }} <a href="{{ .Params.scr }}">free</a>
-                responsive<br />
-                site template designed by <a href="{{ .Params.scr }}">HTML5 UP</a>.</h2>
-            <p> {{ .Params.subtitle }} </p>
-        </header>
+      {{ if (eq .Params.section_type "about")  }}
+        {{ partial "body/section" . }}
+      {{ end}}
+      
+      {{ if (eq .Params.section_type "contact")  }}
+        {{ partial "body/section" . }}
+      {{ end}}
+     
+      {{ end }}
 
-        <footer>
-            <a href="#portfolio" class="button scrolly">Magna Aliquam</a>
-        </footer>
+    {{ end }}
+  
+  
 
-    </div>
-</section>
 
-{{ end }}
+    
+   
+    
+
