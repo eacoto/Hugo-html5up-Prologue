@@ -1,24 +1,24 @@
 main:
   - name: Home
-    url: /#intro
+    url: "#intro"
     weight: 10
     params:
       id: "top"
       class: "icon solid fa-home"
   - name: Portfolio
-    url: /#portfolio
+    url: "#portfolio"
     weight: 20
     params:
       id: "portfolio"
       class: "icon solid fa-th"
   - name: About Me
-    url: /#about
+    url: "#about"
     weight: 30
     params:
       id: "about"
       class: "icon solid fa-user"
   - name: Contact
-    url: /#contact
+    url: "#contact"
     weight: 40
     params:
       id: "contact"
