@@ -1,0 +1,16 @@
+
+<div class="row">
+    {{  range .Pages }}
+
+        <div class="col-4 col-12-mobile">
+            <article class="item">
+              <a href="{{ .Permalink }} " class="image fit"><img src="{{ .Params.image }}" alt="" /></a>
+              <header>
+                <h3> {{.Params.title }} </h3>
+              </header>
+            </article>
+        </div>
+
+    {{ end }}
+  </div>
+</div>
