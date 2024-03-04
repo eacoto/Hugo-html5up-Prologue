@@ -1,18 +1,27 @@
 
 <!-- Portfolio -->
-<section id="{{ .Params.Title }}" class="{{ .Params.class }}">
+<section id="{{.Params.id }}" class=" {{ .Params.class }}">
     <div class="container">
-
-        <header>
-            <h2 class="alt"> {{ .Params.Title }} <a href="{{ .Params.scr }}">free</a>
-                responsive<br />
-                site template designed by <a href="{{ .Params.scr }}">HTML5 UP</a>.</h2>
-            <p> {{ .Params.subtitle }} </p>
-        </header>
-
-        <footer>
-            <a href="#portfolio" class="button scrolly">Magna Aliquam</a>
-        </footer>
-
+      <header>
+        <h2> {{ .Params.Title }} </h2>
+      </header>
+      <p>{{.Content}}</p>
+      <div class="row">
+        {{  range .Pages }}
+  
+            <div class="col-4 col-12-mobile">
+                <article class="item">
+                  <a href="{{ .Permalink }} " class="image fit"><img src="{{ .Params.image }}" alt="" /></a>
+                  <header>
+                    <h3> {{.Params.title }} </h3>
+                  </header>
+                </article>
+            </div>
+  
+        {{ end }}
+      </div>
     </div>
-</section>
+    </div>
+  </section>
+  
+
