@@ -1,11 +1,15 @@
 {{ define "main" }}
 
-      {{ range where site.RegularPages "Type" "home" }}
+      {{ range site.RegularPages  }}
      
       {{ if (eq .Params.section_type "home")  }}
         {{ partial "body/intro" . }}
       {{ end}}
-     
+    
+   
+      {{ if (eq .Params.section_type "portfolio")  }}
+        {{ partial "body/section" . }}
+      {{ end}}
 
       {{ if (eq .Params.section_type "about")  }}
         {{ partial "body/section" . }}
@@ -16,6 +20,8 @@
       {{ end}}
      
       {{ end }}
+
+
 
     {{ end }}
   
