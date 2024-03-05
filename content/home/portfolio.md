@@ -3,7 +3,7 @@ title: "Portfolio"
 id: "portfolio"
 date: "2024-02-05T13:20:16-05:00"
 weight: 2
-section_type: "portfolio"
+section_type: "section"
 class: "two"
 scr: "http://html5up.net/license"
 
