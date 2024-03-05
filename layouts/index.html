@@ -1,34 +1,9 @@
 {{ define "main" }}
-
-      {{ range site.RegularPages  }}
-     
-      {{ if (eq .Params.section_type "home")  }}
+  {{ range site.RegularPages }}
+    {{ if (eq .Params.section_type "home" ) }}
         {{ partial "body/intro" . }}
-      {{ end}}
-    
-   
-      {{ if (eq .Params.section_type "portfolio")  }}
-        {{ partial "body/section" . }}
-      {{ end}}
-
-      {{ if (eq .Params.section_type "about")  }}
-        {{ partial "body/section" . }}
-      {{ end}}
-      
-      {{ if (eq .Params.section_type "contact")  }}
-        {{ partial "body/section" . }}
-      {{ end}}
-     
-      {{ end }}
-
-
-
+        {{else if (eq .Params.section_type "section" ) }}
+          {{ partial "body/section" . }}
+        {{ end}}
     {{ end }}
-  
-  
-
-
-    
-   
-    
-
+{{ end }}
