@@ -1,8 +1,6 @@
 ---
 title: "Orci Convallis"
 date: "2024-02-05T13:23:56-05:00"
-name: ""
-section_type: "article"
 image: "/images/pic07.jpg"
 ---
 

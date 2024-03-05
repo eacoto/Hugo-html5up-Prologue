@@ -1,8 +1,6 @@
 ---
 title: "Magna Nullam"
 date: "2024-02-05T13:25:17-05:00"
-name: ""
-section_type: "article"
 image: "/images/pic04.jpg"
 ---
 

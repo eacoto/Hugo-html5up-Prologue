@@ -1,8 +1,6 @@
 ---
 title: "Dolor Penatibus"
 date: "2024-02-05T13:24:42-05:00"
-name: ""
-section_type: "article"
 image: "/images/pic06.jpg"
 ---
 

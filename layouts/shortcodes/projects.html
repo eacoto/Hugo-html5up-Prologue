@@ -1,7 +1,5 @@
-
 <div class="row">
-  {{ range where site.RegularPages "Type" "articles" }}
-
+  {{ range where site.RegularPages  "type" "projects" }}
         <div class="col-4 col-12-mobile">
             <article class="item">
               <a href="{{ .Permalink }} " class="image fit"><img src="{{ .Params.image }}" alt="" /></a>
@@ -10,7 +8,6 @@
               </header>
             </article>
         </div>
-
     {{ end }}
   </div>
 </div>
