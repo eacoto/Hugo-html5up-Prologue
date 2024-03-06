@@ -7,7 +7,7 @@
       </header>
       <p>{{.Content}}</p>
       <div class="row">
-        {{  range .Pages }}
+        {{ range where site.RegularPages "Type" "projects" }}
   
             <div class="col-4 col-12-mobile">
                 <article class="item">
@@ -17,7 +17,7 @@
                   </header>
                 </article>
             </div>
-  
+
         {{ end }}
       </div>
     </div>
