@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+     {{ range where site.RegularPages "Type" "homepage" }}
+    {{ if (eq .Params.section_type "intro")  }}
+      {{ partial "sections/intro" . }}
+    {{ end}}
+    
+    {{ range where site.RegularPages "Type" "aboutme" }}
+    {{ if (eq .Params.section_type "aboutme" )  }}
+      {{ partial "sections/aboutme"  . }}
+    {{ end}}
+    
+    {{ range where site.RegularPages "Type" "contact" }}
+    {{ if (eq .Params.section_type "contact" )  }}
+      {{ partial "sections/contact"  . }}
+    {{ end}}
+
+
+     {{ end }}
+    {{ end }} 
+    {{end}}
+{{end}}
+

@@ -1,25 +1,19 @@
+
 {{ define "main" }}
 
-     {{ range where site.RegularPages "Type" "homepage" }}
-    {{ if (eq .Params.section_type "intro")  }}
+{{ range where site.RegularPages "Type" "homepage" }}
+   
+  {{ if (eq .Params.section_type "home")  }}
       {{ partial "sections/intro" . }}
     {{ end}}
     
-    {{ range where site.RegularPages "Type" "aboutme" }}
-    {{ if (eq .Params.section_type "aboutme" )  }}
-      {{ partial "sections/aboutme"  . }}
+    {{ if (eq .Params.section_type "text")  }}
+      {{ partial "sections/text" . }}
     {{ end}}
-    
-    {{ range where site.RegularPages "Type" "contact" }}
-    {{ if (eq .Params.section_type "contact" )  }}
-      {{ partial "sections/contact"  . }}
+     
+    {{ if (eq .Params.section_type "services")  }}
+      {{ partial "sections/services" . }}
     {{ end}}
-
-
-     {{ end }}
-    {{ end }} 
-    {{end}}
-{{end}}
-
-
-    
+     
+  {{ end }}
+{{ end }}
