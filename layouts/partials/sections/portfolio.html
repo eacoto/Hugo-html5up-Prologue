@@ -1,4 +1,3 @@
-
 <!-- Portfolio -->
 <section id="{{.Params.id }}" class=" {{ .Params.class }}">
     <div class="container">
@@ -7,18 +6,7 @@
       </header>
       <p>{{.Content}}</p>
       <div class="row">
-        {{ range where site.RegularPages "Type" "projects" }}
-  
-            <div class="col-4 col-12-mobile">
-                <article class="item">
-                  <a href="{{ .Permalink }} " class="image fit"><img src="{{ .Params.image }}" alt="" /></a>
-                  <header>
-                    <h3> {{.Params.title }} </h3>
-                  </header>
-                </article>
-            </div>
-
-        {{ end }}
+        {{ partial "components/article-card" . }}
       </div>
     </div>
     </div>
