@@ -1,3 +1,4 @@
+
 social:
   - name: "Twitter"
     url: "/"
@@ -14,3 +15,7 @@ social:
   - name: "Github"
     url: "/"
     icon: "fa-github"
+
+main:
+    title: "Jane Doe"
+    subtitle: "Hyperspace Engineer"
