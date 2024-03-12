@@ -1,5 +1,5 @@
 main:
-  - name: Home
+  - name: Intro
     url: "#top"
     weight: 10
     params:
