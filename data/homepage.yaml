@@ -1,4 +1,8 @@
 
+header:
+    title: "Jane Doe"
+    subtitle: "Hyperspace Engineer "
+
 social:
   - name: "Twitter"
     url: "/"
@@ -16,6 +20,9 @@ social:
     url: "/"
     icon: "fa-github"
 
-main:
-    title: "Jane Doe"
-    subtitle: "Hyperspace Engineer"
+footer:
+    untitled: " Untitled."
+    design: "HTML5 UP"
+    url : "http://html5up.net"
+
+
