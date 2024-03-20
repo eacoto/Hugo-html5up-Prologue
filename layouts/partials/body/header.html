@@ -1,4 +1,4 @@
-{{ $data := index .Site.Data.social }}
+{{ $data := index .Site.Data.homepage }}
 <!-- Header -->
 <div id="header">
   <div class="top">
@@ -9,8 +9,8 @@
         <span class="image avatar48">
           <img src="{{ $avat.RelPermalink }}" alt="" />
         </span>
-        <h1 id="title">{{ $data.main.title }}</h1>
-        <p>{{ $data.main.subtitle }}</p>
+        <h1 id="title">{{ $data.header.title }}</h1>
+        <p>{{ $data.header.subtitle }}</p>
       </a>
     </div>
     <!-- Nav -->
