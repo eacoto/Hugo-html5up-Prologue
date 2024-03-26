@@ -4,10 +4,9 @@
   <div class="top">
     <!-- Logo -->
     <div id="logo">
-      {{ $avat := resources.Get "images/avatar.jpg"}}
       <a href="/">
         <span class="image avatar48">
-          <img src="{{ $avat.RelPermalink }}" alt="" />
+          <img src="{{ $data.header.avatar }}" alt="" />
         </span>
         <h1 id="title">{{ $data.header.title }}</h1>
         <p>{{ $data.header.subtitle }}</p>
@@ -23,8 +22,7 @@
       {{- range $data.social }}
       <li>
         <a href="{{ .url }}" class="icon brands {{ .icon }}">
-          <span class="label">{{.name }} </span></a
-        >
+          <span class="label">{{.name }} </span></a>
       </li>
       {{ end }}
     </ul>

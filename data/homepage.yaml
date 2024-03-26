@@ -2,6 +2,7 @@
 header:
     title: "Jane Doe"
     subtitle: "Hyperspace Engineer "
+    avatar:  "/images/avatar.jpg"
 
 social:
   - name: "Twitter"
