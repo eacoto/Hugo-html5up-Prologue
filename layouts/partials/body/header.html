@@ -20,10 +20,12 @@
   <div class="bottom">
     <ul class="icons">
       {{- range $data.social }}
-      <li>
-        <a href="{{ .url }}" class="icon brands {{ .icon }}">
-          <span class="label">{{.name }} </span></a>
-      </li>
+        {{ if .enabled }}
+          <li>
+            <a href="{{ .url }}" class="icon brands {{ .icon }}">
+              <span class="label">{{.name }} </span></a>
+          </li>
+        {{ end }}
       {{ end }}
     </ul>
   </div>
