@@ -1,17 +1,16 @@
 <!-- Intro -->
 <section id="{{ .Params.id }}" class="{{ .Params.class }}">
   <div class="container">
+    {{ $data := index .Site.Data.homepage }}
     <header>
       <h2 class="alt">
-        {{ .Params.Title }}
-        <a href="{{ .Params.scr }}">free</a> responsive<br />
-        site template designed by <a href="{{ .Params.scr }}">HTML5 UP</a>.
+        {{ $data.intro.title | safeHTML }}
       </h2>
-      <p>{{ .Params.subtitle }}</p>
+      <p>{{ $data.intro.subtitle }}</p>
     </header>
 
     <footer>
-      <a href="#portfolio" class="button scrolly">Magna Aliquam</a>
+      <a href="{{ $data.intro.url }}" class="button scrolly">{{ $data.intro.btnTitle }}</a>
     </footer>
   </div>
 </section>
