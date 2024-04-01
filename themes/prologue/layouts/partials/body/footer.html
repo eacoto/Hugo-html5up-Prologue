@@ -1,0 +1,9 @@
+{{ $data := index .Site.Data.homepage }}
+<!-- Footer -->
+<div id="footer">
+  <!-- Copyright -->
+  <ul class="copyright">
+    <li>&copy;{{ $data.footer.untitled }} All rights reserved.</li>
+    <li>Design: <a href="{{ $data.footer.url }}">{{ $data.footer.design }}</a></li>
+  </ul>
+</div>
