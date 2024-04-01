@@ -55,7 +55,8 @@
 
 				var	$this = $(this),
 					id = $this.attr('href'),
-					$section = $(id);
+					//$section = $(id);
+					$section = $(id.replace('/', ''));
 
 				// No section for this link? Bail.
 					if ($section.length < 1)
