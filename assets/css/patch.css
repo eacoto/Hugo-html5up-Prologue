@@ -1,0 +1,11 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+{{ $data := index .Site.Data.homepage.intro }}
+
+#main > section.one {
+  background-color: #4444;
+  background-image: url({{ $data.bckGrondurl }});
+}
