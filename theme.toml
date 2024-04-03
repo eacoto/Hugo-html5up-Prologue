@@ -1,0 +1,22 @@
+name = "Hugo HTML5 UP Prologue"
+license = "Creative Commons"
+licenselink = 'https://github.com/owner/repo/LICENSE'
+description = "A Hugo port of the static html template Prologue by HTML5 UP."
+
+# The home page of the theme, where the source can be found
+homepage = 'https://github.com/eacoto/Hugo-html5up-prologue'
+
+# If you have a running demo of the theme
+demosite = 'https://owner.github.io/repo'
+
+# If the theme has a single author
+author = [
+  {name = 'Ernesto Coto'},
+  {name = 'https://github.com/eacoto'}
+]
+
+# If porting an existing theme
+[original]
+  name = "@ajlkn"
+  homepage = "https://html5up.net"
+  repo = ""
