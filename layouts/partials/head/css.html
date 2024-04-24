@@ -1,7 +1,6 @@
 <!-- CSS -->
-{{ $main:= resources.Get "css/main.css" }} 
+{{ $main:= resources.Get "css/main.css" }}
 {{ $font:= resources.Get "css/fontawesome-all.min.css" }}
 {{ $patch := resources.Get "css/patch.css" | resources.ExecuteAsTemplate "patch.css" . }}
-
 {{ $css := slice $main $patch $patch | resources.Concat "css/main.css" }}
 <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
