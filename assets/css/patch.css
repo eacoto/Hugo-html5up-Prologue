@@ -3,7 +3,7 @@ html {
   scroll-behavior: smooth;
 }
 
-{{ $backGroundimg := index .Site.Data.homepage.intro.bckGrond }}
+{{ $backGroundimg := index .Site.Data.homepage.intro.bckGround }}
 {{ with resources.Get $backGroundimg }}
 
 #main > section.one {
