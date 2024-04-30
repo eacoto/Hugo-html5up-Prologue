@@ -7,10 +7,13 @@
     <p>{{.Content}}</p>
     <div class="row">
       {{  range .Pages }}
-
+          {{ $imgsrc := .Params.src }}
           <div class="col-4 col-12-mobile">
               <article class="item">
-                <a href="{{ .Permalink }} " class="image fit"><img src="{{ .Params.image }}" alt="" /></a>
+                {{ with resources.Get $imgsrc }}
+                <a href="{{ .Permalink }} " class="image fit"><img src="{{ .Permalink }}" alt="" /></a>
+                {{ end }}
+
                 <header>
                   <h3> {{.Params.title }} </h3>
                 </header>

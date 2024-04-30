@@ -1,7 +1,7 @@
 ---
 title: "Natoque Vitae"
 date: "2024-02-05T13:24:26-05:00"
-image: "/images/pic05.jpg"
+src: "/images/pic05.jpg"
 weight: 2
 ---
 

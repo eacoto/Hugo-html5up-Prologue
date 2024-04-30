@@ -3,7 +3,7 @@ title: "Portfolio"
 id: "portfolio"
 weight: 2
 section_type: "project"
-image: ""
+scr: "images/*.jpg"
 class: "two"
 scr: "http://html5up.net/license"
 date: "2024-02-05T13:20:16-05:00"

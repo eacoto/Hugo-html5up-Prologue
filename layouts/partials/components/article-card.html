@@ -7,7 +7,8 @@
     {{ $secondProject := index $projects $secondProjectIndex }}
     <article class="item">
         <a href="{{ $firstProject.Permalink }} " class="image fit">
-            <img src="{{ $firstProject.Params.image }}" alt="" /></a>
+            <img src="{{ $firstProject.Params.src }}" alt="" /></a>
+        <p></p>
         <header>
             <h3>{{ $firstProject.Params.title }}</h3>
         </header>
@@ -15,7 +16,7 @@
     {{ if lt $secondProjectIndex $totalProjects }}
     <article class="item">
         <a href="{{ $secondProject.Permalink }} " class="image fit">
-            <img src="{{ $secondProject.Params.image }}" alt="" /></a>
+            <img src="{{ $secondProject.Params.src }}" alt="" /></a>
         <header>
             <h3>{{ $secondProject.Params.title }}</h3>
         </header>

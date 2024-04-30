@@ -3,7 +3,7 @@ title: "Contact"
 id: "contact"
 weight: 4
 section_type: "section"
-image: ""
+scr: "images/*.jpg"
 class: "four"
 date: "2024-02-05T13:19:46-05:00"
 ---
