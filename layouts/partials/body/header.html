@@ -1,4 +1,8 @@
 {{ $data := index .Site.Data.homepage }}
+{{ $avatar := $data.header.avatar }}
+{{ $Title := $data.header.title }}
+{{ $SubTitle := $data.header.subtitle }}
+
 <!-- Header -->
 <div id="header">
   <div class="top">
@@ -6,10 +10,12 @@
     <div id="logo">
       <a href="/">
         <span class="image avatar48">
-          <img src="{{ $data.header.avatar }}" alt="" />
+          {{ with resources.Get $avatar }}
+          <img src="{{ .RelPermalink }}" alt="" />
+          {{ end }}
         </span>
-        <h1 id="title">{{ $data.header.title }}</h1>
-        <p>{{ $data.header.subtitle }}</p>
+        <h1 id="title">{{ $Title }}</h1>
+        <p>{{ $SubTitle }}</p>
       </a>
     </div>
     <!-- Nav -->
