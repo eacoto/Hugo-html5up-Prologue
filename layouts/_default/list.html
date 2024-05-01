@@ -13,17 +13,14 @@
                 {{ with resources.Get $imgsrc }}
                 <a href="{{ .Permalink }} " class="image fit"><img src="{{ .Permalink }}" alt="" /></a>
                 {{ end }}
-
                 <header>
                   <h3> {{.Params.title }} </h3>
                 </header>
               </article>
           </div>
-
       {{ end }}
     </div>
   </div>
   </div>
 </section>
-
 {{ end }}
