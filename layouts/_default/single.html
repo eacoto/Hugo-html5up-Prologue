@@ -3,10 +3,10 @@
 <section id="{{.Params.id }}" class=" {{ .Params.class }}">
   <div class="container">
     <header>
-      <a href="/#portfolio{{ .Permalink }}"><h2>{{ .Params.Title }}</h2></a>
+      <a href="{{ .Permalink }}/#portfolio"><h2>{{ .Params.Title }}</h2></a>
     </header>
     {{ with resources.Get $singleImg }}
-    <a href="/#portfolio{{ .Permalink }}" class="image featured"><img src="{{ .Permalink }}" alt=""/></a>
+    <a href="{{ .Permalink }}/#portfolio" class="image featured"><img src="{{ .Permalink }}" alt=""/></a>
     {{ end }}
     <p>{{.Content}} hola </p>
   </div>
