@@ -6,8 +6,11 @@
     {{ $secondProjectIndex := add . 1 }}
     {{ $secondProject := index $projects $secondProjectIndex }}
     <article class="item">
+        {{ $firstImg := $firstProject.Params.src }}
         <a href="{{ $firstProject.Permalink }} " class="image fit">
-            <img src="{{ $firstProject.Params.src }}" alt="" /></a>
+            {{ with resources.Get $firstImg }}
+            <img src="{{ .Permalink }}" alt="" /></a>
+        {{ end }}
         <p></p>
         <header>
             <h3>{{ $firstProject.Params.title }}</h3>
@@ -15,8 +18,11 @@
     </article>
     {{ if lt $secondProjectIndex $totalProjects }}
     <article class="item">
+        {{ $secondImg := $secondProject.Params.src }}
         <a href="{{ $secondProject.Permalink }} " class="image fit">
-            <img src="{{ $secondProject.Params.src }}" alt="" /></a>
+            {{ with resources.Get $secondImg }}
+            <img src="{{ .Permalink }}" alt="" /></a>
+        {{ end }}
         <header>
             <h3>{{ $secondProject.Params.title }}</h3>
         </header>

@@ -7,13 +7,18 @@
 <html lang='{{ .Site.Language.Lang | default "en-us" }}'>
 
 <head>
-  {{ partial "head/metadata" . }} {{ partial "head/css" . }}
+  {{ partial "head/metadata" . }} 
+  {{ partial "head/css" . }}
+  {{ partial "head/scripts.html" . }}
 </head>
 
 <body class="is-preload">
   {{ partial "body/header.html" . }}
-  <main id="main">{{ block "main" . }}{{ end }}</main>
-  {{ partial "body/footer.html" . }} {{ partial "head/scripts.html" . }}
+  <main id="main">
+    {{ block "main" . }}{{ end }}
+  </main>
+  
+  {{ partial "body/footer.html" . }} 
 </body>
 
 </html>
