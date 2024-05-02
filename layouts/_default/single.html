@@ -1,14 +1,15 @@
 {{ define "main" }}
-{{ $singleImg := .Params.src }}
 <section id="{{.Params.id }}" class=" {{ .Params.class }}">
   <div class="container">
     <header>
-      <a href="/#portfolio">
+      <a href="{{ .Site.BaseURL }}/#portfolio">
         <h2>{{ .Params.Title }}</h2>
       </a>
     </header>
+    {{ $baseurl := .Site.BaseURL }}
+    {{ $singleImg := .Params.src }}
     {{ with resources.Get $singleImg }}
-    <a href="/#portfolio" class="image featured"><img src="{{ .Permalink }}" alt="" /></a>
+    <a href="{{ $baseurl }}/#portfolio" class="image featured"><img src="{{ .Permalink }}" alt="" /></a>
     {{ end }}
     <p>{{.Content}}</p>
   </div>
