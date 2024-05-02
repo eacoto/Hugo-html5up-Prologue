@@ -6,7 +6,7 @@
       <h2>{{ .Params.Title }}</h2>
     </header>
     {{ with resources.Get $singleImg }}
-    <a href="/" class="image featured"><img src="{{ .Permalink }}" alt="" /></a>
+    <img src="{{ .Permalink }}" alt="" />
     {{ end }}
     <p>{{.Content}}</p>
   </div>
