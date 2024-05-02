@@ -1,11 +1,11 @@
 <!-- Sections -->
-{{ $singleImg := .Params.src }}
+{{ $sectImg := .Params.src }}
 <section id="{{.Params.id }}" class=" {{ .Params.class }}">
   <div class="container">
     <header>
       <h2>{{ .Params.Title }}</h2>
     </header>
-    {{ with resources.Get $singleImg }}
+    {{ with resources.Get $sectImg }}
     <img src="{{ .Permalink }}" alt="" />
     {{ end }}
     <p>{{.Content}}</p>
