@@ -2,9 +2,7 @@
 <section id="{{.Params.id }}" class=" {{ .Params.class }}">
   <div class="container">
     <header>
-      <a href="{{ .Site.BaseURL }}/#portfolio">
-        <h2>{{ .Params.Title }}</h2>
-      </a>
+      <a href="{{ .Site.BaseURL }}/#portfolio"><h2>{{ .Params.Title }}</h2></a>
     </header>
     {{ $baseurl := .Site.BaseURL }}
     {{ $singleImg := .Params.src }}
