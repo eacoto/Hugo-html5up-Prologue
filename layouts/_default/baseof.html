@@ -9,20 +9,20 @@
 <head>
   {{ partial "head/metadata" . }}
   {{ partial "head/css" . }}
-  {{ partial "head/scripts.html" . }}
 </head>
 <body class="is-preload">
   <!-- Main -->
   {{ partial "body/header.html" . }}
   
-    <div id="main">
-
-      {{ block "main" . }}
-      {{ end }}
-    </div>
-
+  <div id="main">
+    
+    {{ block "main" . }}
+    {{ end }}
+  </div>
+  
   
   {{ partial "body/footer.html" . }}
+  {{ partial "head/scripts.html" . }}
 </body>
 
 </html>
