@@ -1,6 +1,6 @@
 {{ $data := index .Site.Data.homepage }}
 {{ $avatar := $data.header.avatar }}
-{{ $Title := $data.header.title }}
+{{ $TitleUrl := $data.header.url }}
 {{ $SubTitle := $data.header.subtitle }}
 
 <!-- Header -->
@@ -8,7 +8,7 @@
   <div class="top">
     <!-- Logo -->
     <div id="logo">
-      <a href="/">
+      <a href="{{ .Permalink }} ">
         <span class="image avatar48">
           {{ with resources.Get $avatar }}
           <img src="{{ .Permalink }}" alt="" />
