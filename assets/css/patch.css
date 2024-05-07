@@ -3,9 +3,12 @@ html {
   scroll-behavior: smooth;
 }
 
-{{ $data := index .Site.Data.homepage.intro }}
+{{ $backGroundimg := index .Site.Data.homepage.intro.bckGround }}
+{{ with resources.Get $backGroundimg }}
 
 #main > section.one {
   background-color: #4444;
-  background-image: url({{ $data.bckGrondurl }});
+  background-image: url({{ .Permalink }});
 }
+
+{{ end }}

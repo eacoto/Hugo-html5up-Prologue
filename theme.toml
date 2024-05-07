@@ -10,10 +10,10 @@ homepage = 'https://github.com/eacoto/Hugo-html5up-prologue'
 demosite = 'https://owner.github.io/repo'
 
 # If the theme has a single author
-author = [
-  {name = 'Ernesto Coto'},
-  {name = 'https://github.com/eacoto'}
-]
+[author =]
+  name = 'Ernesto Coto'
+  name = 'https://github.com/eacoto'
+
 
 # If porting an existing theme
 [original]

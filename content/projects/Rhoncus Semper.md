@@ -1,7 +1,7 @@
 ---
 title: "Rhoncus Semper"
 date: "2024-02-05T13:24:34-05:00"
-image: "/images/pic03.jpg"
+src: "/images/pic03.jpg"
 weight: 1
 ---
 

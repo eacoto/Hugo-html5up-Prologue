@@ -2,11 +2,13 @@
 <section id="{{.Params.id }}" class=" {{ .Params.class }}">
   <div class="container">
     <header>
-      <h2>{{ .Params.Title }}</h2>
+      <a href="{{ .Site.BaseURL }}/#portfolio"><h2>{{ .Params.Title }}</h2></a>
     </header>
-    <a href="/#portfolio" class="image featured"
-      ><img src="{{.Params.image}}" alt=""
-    /></a>
+    {{ $baseurl := .Site.BaseURL }}
+    {{ $singleImg := .Params.src }}
+    {{ with resources.Get $singleImg }}
+    <a href="{{ $baseurl }}/#portfolio" class="image featured"><img src="{{ .Permalink }}" alt="" /></a>
+    {{ end }}
     <p>{{.Content}}</p>
   </div>
 </section>

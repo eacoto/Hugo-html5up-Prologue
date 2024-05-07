@@ -1,7 +1,7 @@
 ---
 title: "Orci Convallis"
 date: "2024-02-05T13:23:56-05:00"
-image: "/images/pic07.jpg"
+src: "/images/pic07.jpg"
 weight: 3
 ---
 
