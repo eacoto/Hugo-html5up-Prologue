@@ -15,7 +15,10 @@ EXPOSE 3000
 
 CMD ["/busybox-httpd", "-f", "-v", "-p", "3000"]
 
-## How to build and run this site with docker
+## How to build and run this site manually with docker
 # 1. docker build . -t <some_tag_name>
 # 2. docker run -it --rm --detach -p 3000:3000 <some_tag_name>
 # 3. docker stop <container_id>
+
+## You can also use docker compose
+# docker compose up
