@@ -1,0 +1,49 @@
+[header]
+title = "Jane Doe"
+subtitle = "Hyperspace Engineer hola"
+url = "/#top"
+avatar = "/images/avatar.jpg"
+
+[intro]
+title = "<h2 class='alt'>Hi! I'm <strong>Prologue</strong>, a <a href='http://html5up.net/license'>free</a> responsive<br /> site template designed by <a href='http://html5up.net'>HTML5 UP</a>.</h2>"
+subtitle = "Ligula scelerisque justo sem accumsan diam quis vitae natoque dictum sollicitudin elementum."
+bckGround = "/images/banner.jpg"
+btnTitle = "Portfolio"
+url = "#portfolio"
+btnEnabled = true
+
+[social]
+[[social]]
+name = "Twitter"
+enabled = true
+url = "/"
+icon = "fa-twitter"
+
+[[social]]
+name = "Facebook"
+enabled = true
+url = "/"
+icon = "fa-facebook-f"
+
+[[social]]
+name = "Instagram"
+enabled = "true"
+url = "/"
+icon = "fa-instagram"
+
+[[social]]
+name = "LinkedIn"
+enabled = true
+url = "/"
+icon = "fa-linkedin"
+
+[[social]]
+name = "Github"
+enabled = true
+url = "/"
+icon = "fa-github"
+
+[footer]
+untitled = " Untitled."
+design = "HTML5 UP"
+url = "http://html5up.net"
