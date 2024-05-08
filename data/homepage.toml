@@ -15,13 +15,13 @@
     btnEnabled = true
 
 [social]
-    [[social]]
+    [[social.params]]
         name = "Twitter"
         enabled = true
         url = "/"
         icon = "fa-twitter"
 
-    [[social]]
+    [[social.params]]
         name = "Facebook"
         enabled = true
         url = "/"
