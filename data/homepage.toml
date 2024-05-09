@@ -26,6 +26,18 @@
         enabled = true
         url = "/"
         icon = "fa-facebook-f"
+    
+    [[social.params]]
+        name = "Instagram"
+        enabled = true
+        url = "/"
+        icon = "fa-instagram"
+    
+    [[social.params]]
+        name = "LinkedIn"
+        enabled = true
+        url = "/"
+        icon = "fa-linkedin"
 
     # Add more social platforms here...
 
