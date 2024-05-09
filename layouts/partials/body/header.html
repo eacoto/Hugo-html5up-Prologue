@@ -24,7 +24,7 @@
   <div class="bottom">
     <!-- Social Icons -->
     <ul class="icons">
-      {{- range $data.social }}
+      {{- range $data.social.params }}
       {{ if .enabled }}
       <li>
         <a href="{{ .url }}" class="icon brands {{ .icon }}">
