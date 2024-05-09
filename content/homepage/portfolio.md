@@ -2,7 +2,7 @@
 title: "Portfolio"
 id: "portfolio"
 weight: 2
-section_type: "portfolio"
+section_type: "project"
 scr: "images/*.jpg"
 class: "two"
 scr: "http://html5up.net/license"
